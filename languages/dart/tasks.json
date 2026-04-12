@@ -21,44 +21,110 @@
   },
   {
     "label": "flutter run",
+    "command": "dart",
+    "args": ["run", "$ZED_FILE"],
+    "tags": ["dart-main"]
+  },
+  {
+    "label": "Run $ZED_STEM (FVM)",
+    "command": "fvm",
+    "args": ["dart", "run", "$ZED_FILE"],
+    "tags": ["dart-main"]
+  },
+  {
+    "label": "Run $ZED_STEM",
     "command": "flutter",
     "args": ["run"],
     "tags": ["flutter-main"]
   },
   {
-    "label": "fvm flutter run",
-    "command": "fvm flutter",
-    "args": ["run"],
+    "label": "Run $ZED_STEM (FVM)",
+    "command": "fvm",
+    "args": ["flutter", "run"],
     "tags": ["flutter-main"]
   },
   {
-    "label": "flutter test $ZED_STEM",
+    "label": "Profile $ZED_STEM",
     "command": "flutter",
-    "args": ["test", "$ZED_FILE"],
-    "tags": ["flutter-test-main"]
+    "args": ["run", "--profile"],
+    "tags": ["flutter-main"]
   },
   {
-    "label": "fvm flutter test $ZED_STEM",
-    "command": "fvm flutter",
-    "args": ["test", "$ZED_FILE"],
-    "tags": ["flutter-test-main"]
+    "label": "Profile $ZED_STEM (FVM)",
+    "command": "fvm",
+    "args": ["flutter", "run", "--profile"],
+    "tags": ["flutter-main"]
   },
   {
-    "label": "dart test file $ZED_STEM",
+    "label": "Test $ZED_STEM",
     "command": "dart",
     "args": ["test", "$ZED_FILE"],
     "tags": ["dart-test-file"]
   },
   {
-    "label": "dart test group $ZED_STEM",
+    "label": "Test $ZED_STEM (FVM)",
+    "command": "fvm",
+    "args": ["dart", "test", "$ZED_FILE"],
+    "tags": ["dart-test-file"]
+  },
+  {
+    "label": "Test Group $ZED_STEM",
     "command": "dart",
     "args": ["test", "\"$ZED_FILE?line=$ZED_ROW\""],
     "tags": ["dart-test-group"]
   },
   {
-    "label": "dart test single $ZED_STEM",
+    "label": "Test Group $ZED_STEM (FVM)",
+    "command": "fvm",
+    "args": ["dart", "test", "\"$ZED_FILE?line=$ZED_ROW\""],
+    "tags": ["dart-test-group"]
+  },
+  {
+    "label": "Test Single $ZED_STEM",
     "command": "dart",
     "args": ["test", "\"$ZED_FILE?line=$ZED_ROW\""],
     "tags": ["dart-test-single"]
+  },
+  {
+    "label": "Test Single $ZED_STEM (FVM)",
+    "command": "fvm",
+    "args": ["dart", "test", "\"$ZED_FILE?line=$ZED_ROW\""],
+    "tags": ["dart-test-single"]
+  },
+  {
+    "label": "Test $ZED_STEM",
+    "command": "flutter",
+    "args": ["test", "$ZED_FILE"],
+    "tags": ["flutter-test-file"]
+  },
+  {
+    "label": "Test $ZED_STEM (FVM)",
+    "command": "fvm",
+    "args": ["flutter", "test", "$ZED_FILE"],
+    "tags": ["flutter-test-file"]
+  },
+  {
+    "label": "Test Group $ZED_STEM",
+    "command": "flutter",
+    "args": ["test", "\"$ZED_FILE?line=$ZED_ROW\""],
+    "tags": ["flutter-test-group"]
+  },
+  {
+    "label": "Test Group $ZED_STEM (FVM)",
+    "command": "fvm",
+    "args": ["flutter", "test", "\"$ZED_FILE?line=$ZED_ROW\""],
+    "tags": ["flutter-test-group"]
+  },
+  {
+    "label": "Test Single $ZED_STEM",
+    "command": "flutter",
+    "args": ["test", "\"$ZED_FILE?line=$ZED_ROW\""],
+    "tags": ["flutter-test-single"]
+  },
+  {
+    "label": "Test Single $ZED_STEM (FVM)",
+    "command": "fvm",
+    "args": ["flutter", "test", "\"$ZED_FILE?line=$ZED_ROW\""],
+    "tags": ["flutter-test-single"]
   }
 ]

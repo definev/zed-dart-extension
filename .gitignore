@@ -1,3 +1,13 @@
 *.wasm
 /target
-grammars/
+/grammars/*
+!/grammars/dart/
+/grammars/dart/*
+!/grammars/dart/tests/
+/grammars/dart/tests/*
+!/grammars/dart/tests/zed_queries.rs
+.dart_tool/
+test-fixtures/generated/
+.zed-integration/
+.zed/
+.codex-tmp/
